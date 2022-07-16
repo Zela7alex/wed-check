@@ -5,6 +5,7 @@
       <img src="./assets/heart-logo.jpg" />
     </div>
     <h2>Bridezilla who?.. Not me.</h2>
+    <BaseTimer />
     <nav>
       <router-link to="/">Home</router-link>|
       <router-link :to="{ name: 'helpers' }">Helpers</router-link>|
