@@ -4,9 +4,16 @@ module.exports = {
     node: true,
   },
   extends: [
+<<<<<<< Updated upstream
     'plugin:vue/essential',
     'eslint:recommended',
     'plugin:prettier/recommended',
+=======
+    "plugin:vue/essential",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "@vue/eslint-config-prettier"
+>>>>>>> Stashed changes
   ],
   parserOptions: {
     parser: '@babel/eslint-parser',

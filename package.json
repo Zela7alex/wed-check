@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vue/eslint-config-prettier": "^7.0.0"
+  }
+}
