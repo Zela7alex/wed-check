@@ -27,9 +27,4 @@ new Vue({
   router,
   store,
   render: (h) => h(App),
-<<<<<<< Updated upstream
 }).$mount('#app')
-=======
-}).$mount("#app");
-``
->>>>>>> Stashed changes
