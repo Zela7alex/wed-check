@@ -87,6 +87,9 @@ export default new Vuex.Store({
       }
       return state.people.filter((p) => p.name.toLowerCase().includes(name))
     },
+    // getTaskById: (state) => (id) => {
+    //   return state.people.taskitems.task.find((task) => task.id === id)
+    // },
   },
   mutations: {},
   actions: {},
