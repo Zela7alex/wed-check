@@ -5,9 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    tasks: [
-      
-  ],
+    tasks: [],
     people: [
       {
         name: 'Bob',
@@ -94,31 +92,31 @@ export default new Vuex.Store({
       return state.tasks
     },
     getTaskInPersonById: (state) => (id) => {
-       state.people.forEach((person)=>{
+      state.people.forEach((person) => {
         person.taskitems.forEach((task) => {
-          if(task.id === id){
+          if (task.id === id) {
             return task
           }
-        });
-      });
-     },
-     getTaskInTasksById: (state) => (id) => {
-      state.tasks.forEach((task)=>{
-         if(task.id === id){
-           return task
-         } 
-     });
+        })
+      })
+    },
+    getTaskInTasksById: (state) => (id) => {
+      state.tasks.forEach((task) => {
+        if (task.id === id) {
+          return task
+        }
+      })
     },
   },
-  mutations:{
-    solidifyTask(state, payload){
-      state.tasks = payload;
-    }
+  mutations: {
+    solidifyTask(state, payload) {
+      state.tasks = payload
+    },
   },
-  actions:{
-    createNewTask(context, payload){
+  actions: {
+    createNewTask(context, payload) {
       const currentTasks = context.state.tasks
-      currentTasks.push(payload);
+      currentTasks.push(payload)
       context.commit('solidifyTask', currentTasks)
     },
   },

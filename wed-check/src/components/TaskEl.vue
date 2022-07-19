@@ -13,10 +13,8 @@
 </template>
 
 <script>
-
 export default {
-  computed: {
-  },
+  computed: {},
   props: {
     tasksList: Array,
   },
