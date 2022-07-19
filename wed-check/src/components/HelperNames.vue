@@ -59,8 +59,8 @@ export default {
 #names {
   width: 100%;
   max-width: 45%;
-  box-shadow: 3px 0 20px rgb(91, 130, 150);
-  background: rgba(45, 196, 201, 0.4);
+  box-shadow: 2px 0 12px rgb(91, 130, 150);
+  background: rgba(45, 196, 201, 0.37);
   margin-top: 2em;
   padding: 2%;
   position: relative;

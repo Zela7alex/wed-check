@@ -7,12 +7,34 @@
     <form>
       <input type="text" class="search" placeholder="Add Helpers" />
       <button type="submit"><i class="fa fa-plus btn"></i></button>
+      <button type="submit"><i class="fa fa-search btn"></i></button>
     </form>
+    <BaseCountItems> Helper Count: </BaseCountItems>
+    <div id="full-names-list">
+      <HelperEl />
+    </div>
   </div>
 </template>
 
 <script>
-export default {}
+import HelperEl from '@/components/HelperEl.vue'
+export default {
+  data() {
+    return {}
+  },
+  computed: {},
+  components: {
+    HelperEl,
+  },
+}
 </script>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+#full-names-list {
+  width: 60%;
+  background-color: rgb(247, 249, 250, 0.7);
+  margin: 0 auto;
+  margin-top: 2em;
+  display: flex;
+}
+</style>

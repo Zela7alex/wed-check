@@ -7,6 +7,7 @@
     <form>
       <input type="text" class="search" placeholder="Add Materials" />
       <button type="submit"><i class="fa fa-plus btn"></i></button>
+      <button type="submit"><i class="fa fa-search btn"></i></button>
     </form>
   </div>
 </template>
