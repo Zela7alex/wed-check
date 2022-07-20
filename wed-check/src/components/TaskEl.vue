@@ -13,11 +13,12 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-  computed: {},
-  props: {
-    tasksList: Array,
+  computed: {
+    ...mapGetters(['tasksList']),
   },
+  props: {},
   methods: {},
 }
 </script>

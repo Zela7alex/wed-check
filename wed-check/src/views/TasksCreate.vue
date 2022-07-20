@@ -18,7 +18,7 @@
     </form>
     <BaseCountItems> Task Count: </BaseCountItems>
     <div id="full-tasks-list">
-      <TaskEl :name="task.name" :id="task.id" />
+      <TaskEl />
     </div>
   </div>
 </template>
@@ -30,7 +30,7 @@ import { v4 as uuidv4 } from 'uuid'
 import TaskEl from '@/components/TaskEl.vue'
 export default {
   computed: {
-    ...mapGetters(['people', 'tasksList']), // mapgetter pulls the tasks added by user through tasksList Getter, that were added in by createNewTask Action
+    ...mapGetters(['people']), // mapgetter pulls the people objects added by user
   },
   components: {
     TaskEl,
@@ -39,18 +39,20 @@ export default {
     ...mapActions(['createNewTask']),
     createNewTaskStart: function () {
       //This function adds user-input into action that will be added to .store
+      let uuidd = uuidv4()
+      console.log(uuidd)
       let payload = {
         name: this.taskName, // "name" & "id" is what is added into tasksList Array
-        id: uuidv4(),
+        id: uuidd,
         isCompleted: true,
       }
-      this.createNewTask(payload) // This payload is brought back to the action from component to .store
+      this.createNewTask(payload) // This payload is brought back to the action from component to .store(vuex)
       this.taskName = ''
     },
   },
   data() {
     return {
-      taskName: '', // resetting taskName
+      taskName: '', // resetting taskName so input is empty
     }
   },
 }
