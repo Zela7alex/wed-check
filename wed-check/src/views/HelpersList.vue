@@ -37,4 +37,9 @@ export default {
   margin-top: 2em;
   display: flex;
 }
+button {
+  border: 0.7px solid rgb(211, 208, 208);
+  border-radius: 4px;
+  border-bottom: 0.8px solid rgb(89, 105, 107);
+}
 </style>

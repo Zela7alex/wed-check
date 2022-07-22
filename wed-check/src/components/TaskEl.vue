@@ -6,6 +6,7 @@
     />
     <div id="task" v-for="task in tasksList" :key="task.id">
       <p>{{ task.name }}</p>
+      <BasePeople class="people-btn" />
       <BaseTrashCan class="trash-can-btn" />
       <BaseEdit class="edit-btn" />
     </div>
@@ -27,9 +28,9 @@ export default {
 #task {
   width: 100%;
   color: black;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(255, 255, 255);
   border-bottom-width: 1.5px;
-  padding: 0.6em;
+  padding: 0.2em;
   padding-left: 2em;
   padding-right: 3.39em;
   position: relative;
@@ -42,12 +43,17 @@ p {
 
 .trash-can-btn {
   position: absolute;
-  right: 60px;
-  top: 8px;
+  right: 50px;
+  top: 36.2px;
 }
 .edit-btn {
   position: absolute;
-  right: 30px;
-  top: 8px;
+  right: 13.9px;
+  top: 36px;
+}
+.people-btn {
+  position: absolute;
+  right: 15px;
+  top: 7px;
 }
 </style>

@@ -16,4 +16,9 @@
 export default {}
 </script>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+button {
+  border: 0.7px solid rgb(211, 208, 208);
+  border-radius: 4px;
+}
+</style>

@@ -11,6 +11,16 @@
         class="search"
         placeholder="Add Tasks"
       />
+      <button
+        type="submit"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+      >
+        <i class="fa fa-user-plus"></i>
+      </button>
+      <BaseHoverInfo id="helper-hover" v-if="hover">
+        >Select Helper</BaseHoverInfo
+      >
       <button @click.prevent="createNewTaskStart()" type="submit">
         <i class="fa fa-plus btn"></i>
       </button>
@@ -49,10 +59,12 @@ export default {
       this.createNewTask(payload) // This payload is brought back to the action from component to .store(vuex)
       this.taskName = ''
     },
+    selectHelperModal: function () {},
   },
   data() {
     return {
       taskName: '', // resetting taskName so input is empty
+      hover: false,
     }
   },
 }
@@ -61,9 +73,25 @@ export default {
 <style lang="css" scoped>
 #full-tasks-list {
   width: 60%;
-  background-color: rgb(247, 249, 250, 0.7);
+  background-color: rgba(229, 246, 250, 0.7);
   margin: 0 auto;
   margin-top: 2em;
   display: flex;
+}
+form {
+  position: relative;
+}
+#helper-hover {
+  position: absolute;
+  top: 25px;
+  right: 125px;
+  display: none;
+}
+.display-info {
+  display: block;
+}
+button {
+  border: 0.7px solid rgb(211, 208, 208);
+  border-radius: 4px;
 }
 </style>
