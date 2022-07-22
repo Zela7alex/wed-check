@@ -29,9 +29,17 @@ export default {
   color: black;
   border-bottom: 1px solid black;
   border-bottom-width: 1.5px;
-  padding: 0.6em 3.87em;
+  padding: 0.6em;
+  padding-left: 2em;
+  padding-right: 3.39em;
   position: relative;
 }
+p {
+  width: 8em;
+  overflow-wrap: break-word;
+  text-align: left;
+}
+
 .trash-can-btn {
   position: absolute;
   right: 60px;
