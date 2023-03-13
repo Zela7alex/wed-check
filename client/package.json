@@ -1,0 +1,43 @@
+{
+  "name": "wed-check",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "axios": "^0.27.2",
+    "babel": "^6.23.0",
+    "bootstrap": "^5.2.0",
+    "core-js": "^3.8.3",
+    "feather-icons": "^4.29.0",
+    "lodash": "^4.17.21",
+    "uuid": "^8.3.2",
+    "uuidv4": "^6.2.13",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.1",
+    "vue2-animate": "^2.1.4",
+    "vue2-transitions": "^0.3.0",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@types/uuid": "^8.3.4",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "prettier": "^2.4.1",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
