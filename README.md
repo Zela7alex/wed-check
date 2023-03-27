@@ -6,7 +6,7 @@
 * [Demo](#Demo)
 
 
-# Wed-Chek
+# Wed-Check
 This is a wedding checklist app called Wed-Check. It helps you organize your wedding planning by providing a checklist of tasks and helper viewibility, along with the ability to track everyones progress without needed to contact everyone to know if they're on track.
 
 ## Functionality
